@@ -1,0 +1,62 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/three/three",
+			"style": {
+				"navigationBarTitleText": "三大项"
+			}
+		},
+		{
+			"path": "pages/benchPress/benchPress",
+			"style": {}
+		},
+		{
+			"path": "pages/squat/squat",
+			"style": {}
+		},
+		{
+			"path": "pages/burpee/burpee/burpee",
+			"style": {}
+		},
+		{
+			"path": "pages/eat/eat/eat",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uView",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"titleNView": false // 不展示title
+	},
+	"tabBar": {
+		"color": "#909399",
+		"selectedColor": "#303133",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{
+				"pagePath": "pages/three/three",
+				"iconPath": "static/index.png",
+				"selectedIconPath": "static/index-selected.png",
+				"text": "三大项"
+			},
+			{
+				"pagePath": "pages/burpee/burpee/burpee",
+				"iconPath": "static/center.png",
+				"selectedIconPath": "static/center-selected.png",
+				"text": "波比跳"
+			},
+			{
+				"pagePath": "pages/eat/eat/eat",
+				"iconPath": "static/center.png",
+				"selectedIconPath": "static/center-selected.png",
+				"text": "饮食"
+			}
+		]
+	}
+}
